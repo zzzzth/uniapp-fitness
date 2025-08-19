@@ -6758,7 +6758,7 @@ function isConsoleWritable() {
 function initRuntimeSocketService() {
   const hosts = "169.254.168.192,192.168.56.1,192.168.238.1,192.168.64.1,192.168.1.105,127.0.0.1";
   const port = "8090";
-  const id = "mp-weixin_kWCbrj";
+  const id = "mp-weixin_Rfb0kv";
   const lazy = typeof swan !== "undefined";
   let restoreError = lazy ? () => {
   } : initOnError();
@@ -7707,7 +7707,5 @@ const createSubpackageApp = initCreateSubpackageApp();
 exports._export_sfc = _export_sfc;
 exports.createSSRApp = createSSRApp;
 exports.index = index;
-exports.onMounted = onMounted;
 exports.ref = ref;
-exports.wx$1 = wx$1;
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map

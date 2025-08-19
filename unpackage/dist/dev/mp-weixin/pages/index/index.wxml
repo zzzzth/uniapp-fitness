@@ -1,1 +1,1 @@
-<view class="custom-nav data-v-1cf27b2a" style="{{'padding-top:' + a + ';' + ('height:' + b)}}"><view class="left data-v-1cf27b2a">左</view><view class="right data-v-1cf27b2a">右</view><view class="title data-v-1cf27b2a">首页</view></view><view class="content data-v-1cf27b2a"><text class="data-v-1cf27b2a">这里是页面内容</text></view>
+<view class="custom-nav data-v-1cf27b2a" style="{{'height:' + a + ';' + ('padding-top:' + b)}}"><view class="left data-v-1cf27b2a">左</view></view><view class="content data-v-1cf27b2a"><text class="data-v-1cf27b2a">这里是页面内容</text></view>

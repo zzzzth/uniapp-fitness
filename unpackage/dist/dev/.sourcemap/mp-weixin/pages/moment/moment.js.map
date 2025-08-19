@@ -1,0 +1,1 @@
+{"version":3,"file":"moment.js","sources":["../../HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvbW9tZW50L21vbWVudC52dWU"],"sourcesContent":["import MiniProgramPage from 'D:/uniapp项目源代码/fitness-app/pages/moment/moment.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;AACA,GAAG,WAAW,eAAe;"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"me.js","sources":["../../HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvbWUvbWUudnVl"],"sourcesContent":["import MiniProgramPage from 'D:/uniapp项目源代码/fitness-app/pages/me/me.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;AACA,GAAG,WAAW,eAAe;"}

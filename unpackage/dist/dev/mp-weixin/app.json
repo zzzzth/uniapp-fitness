@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/moment/moment",
+    "pages/me/me",
+    "common/commonHeader/commonHeader"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "fitness-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "/static/images/hamburger.png",
+        "selectedIconPath": "/static/images/hamburger-active.png"
+      },
+      {
+        "pagePath": "pages/moment/moment",
+        "text": "Moment",
+        "iconPath": "/static/images/potato.png",
+        "selectedIconPath": "/static/images/chip.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "Me",
+        "iconPath": "/static/images/cola.png",
+        "selectedIconPath": "/static/images/cola-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

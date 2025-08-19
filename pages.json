@@ -3,15 +3,59 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "Home",
+				"navigationStyle": "custom"
+			
+			}
+		},
+		{
+			"path": "pages/moment/moment",
+			"style": {
+				"navigationBarTitleText": "Moment",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "Me",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "common/commonHeader/commonHeader",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "fitness-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "Home",
+				"iconPath": "/static/images/hamburger.png",
+				"selectedIconPath": "/static/images/hamburger-active.png"
+			},
+			{
+				"pagePath": "pages/moment/moment",
+				"text": "Moment",
+				"iconPath": "/static/images/potato.png",
+				"selectedIconPath": "/static/images/chip.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "Me",
+				"iconPath": "/static/images/cola.png",
+				"selectedIconPath": "/static/images/cola-active.png"
+			}
+		]
+	}
 }

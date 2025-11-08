@@ -1,0 +1,1 @@
+{"version":3,"file":"commonHeader.js","sources":["../../HBuilderX/plugins/uniapp-cli-vite/uniPage:/Y29tbW9uL2NvbW1vbkhlYWRlci9jb21tb25IZWFkZXIudnVl"],"sourcesContent":["import MiniProgramPage from 'D:/uniapp项目源代码/fitness-app/common/commonHeader/commonHeader.vue'\ntt.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;AACA,GAAG,WAAW,eAAe;"}

@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/diet/diet",
+    "pages/statistics/statistics",
+    "pages/me/me",
+    "common/commonHeader/commonHeader"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "fitness-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4CAF50",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "健身",
+        "iconPath": "/static/images/tabBar/hamburger.png",
+        "selectedIconPath": "/static/images/tabBar/hamburger-active.png"
+      },
+      {
+        "pagePath": "pages/diet/diet",
+        "text": "饮食",
+        "iconPath": "/static/images/tabBar/potato.png",
+        "selectedIconPath": "/static/images/tabBar/chip.png"
+      },
+      {
+        "pagePath": "pages/statistics/statistics",
+        "text": "统计",
+        "iconPath": "/static/images/tabBar/cookie.png",
+        "selectedIconPath": "/static/images/tabBar/cookie-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/static/images/tabBar/cola.png",
+        "selectedIconPath": "/static/images/tabBar/cola-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

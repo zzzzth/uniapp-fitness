@@ -1,0 +1,1 @@
+<view class="grid grid-cols-3 gap-_12rpx_"><view wx:for="{{a}}" wx:for-item="item" wx:key="c" bindtap="{{item.d}}"><view class="flex flex-col justify-center items-center"><image src="{{item.a}}" class="w-_60rpx_ h-_60rpx_"></image><text>{{item.b}}</text></view></view></view>

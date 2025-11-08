@@ -1,0 +1,1 @@
+{"version":3,"file":"cookbookRecom.js","sources":["../../HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvY29va2Jvb2tSZWNvbS9jb29rYm9va1JlY29tLnZ1ZQ"],"sourcesContent":["import MiniProgramPage from 'D:/uniapp项目源代码/fitness-app/pages/cookbookRecom/cookbookRecom.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;AACA,GAAG,WAAW,eAAe;"}

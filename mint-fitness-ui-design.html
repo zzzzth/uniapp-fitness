@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健身小程序 - 薄荷运动风格UI设计稿</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #fafafa;
+            color: #222;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .phone-container {
+            max-width: 375px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 25px;
+            padding: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .phone-screen {
+            background: #fafafa;
+            border-radius: 20px;
+            overflow: hidden;
+            min-height: 812px;
+            position: relative;
+        }
+
+        /* 状态栏 */
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px 8px;
+            background: #fff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .status-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+        }
+
+        /* 自定义导航栏 */
+        .custom-nav {
+            background: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-text {
+            color: #222;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        /* 主内容区 */
+        .main-content {
+            padding: 15px 14px;
+        }
+
+        /* 功能网格 - 3列布局 */
+        .functions-grid {
+            margin-bottom: 22px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .function-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        }
+
+        .function-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .function-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 4px;
+        }
+
+        .function-icon.food-rank { background: linear-gradient(135deg, #4CAF50, #8BC34A); }
+        .function-icon.red-black { background: linear-gradient(135deg, #f44336, #ff5722); }
+        .function-icon.food-category { background: linear-gradient(135deg, #2196F3, #03A9F4); }
+        .function-icon.bmi { background: linear-gradient(135deg, #9C27B0, #E91E63); }
+        .function-icon.workout { background: linear-gradient(135deg, #FF9800, #FFC107); }
+        .function-icon.nutrition { background: linear-gradient(135deg, #00BCD4, #26C6DA); }
+
+        .function-text {
+            font-size: 13px;
+            color: #222;
+            font-weight: 500;
+        }
+
+        /* 问答卡片区域 */
+        .qa-section {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .qa-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            border-radius: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .qa-item:hover {
+            background: #f8f9fa;
+        }
+
+        .qa-item:not(:last-child) {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .qa-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex: 1;
+        }
+
+        .qa-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .qa-icon.daily { background: linear-gradient(135deg, #9C27B0, #E91E63); }
+        .qa-icon.topic { background: linear-gradient(135deg, #f44336, #ff5722); }
+
+        .qa-content {
+            flex: 1;
+        }
+
+        .qa-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 4px;
+        }
+
+        .qa-desc {
+            font-size: 12px;
+            color: #c7c7c7;
+        }
+
+        .qa-arrow {
+            color: #999;
+            font-size: 16px;
+            margin-left: 12px;
+        }
+
+        /* 功能卡片列表 */
+        .feature-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .feature-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .feature-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .feature-title-section {
+            flex: 1;
+        }
+
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 4px;
+        }
+
+        .feature-desc {
+            font-size: 13px;
+            color: #c7c7c7;
+        }
+
+        .more-button {
+            background: #e8f5e8;
+            color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            padding: 6px 15px;
+            font-size: 12px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .feature-items {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            transition: background 0.2s ease;
+            cursor: pointer;
+        }
+
+        .feature-item:hover {
+            background: #f8f9fa;
+        }
+
+        .feature-item-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .feature-item-text {
+            flex: 1;
+            font-size: 14px;
+            color: #c4c4c4;
+        }
+
+        /* 推广横幅 */
+        .promo-banner {
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            border-radius: 12px;
+            padding: 25px 20px;
+            margin: 20px 14px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .banner-features {
+            margin-bottom: 20px;
+        }
+
+        .banner-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .check-icon {
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #4CAF50;
+            flex-shrink: 0;
+        }
+
+        .banner-button {
+            background: #ff4444;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .banner-button:hover {
+            transform: scale(1.05);
+        }
+
+        .banner-disclaimer {
+            font-size: 10px;
+            color: rgba(255,255,255,0.8);
+            margin-top: 10px;
+        }
+
+        .banner-image {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            z-index: 1;
+        }
+
+        /* 底部导航栏 */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 375px;
+            max-width: 100%;
+            background: #fff;
+            border-top: 1px solid #f0f0f0;
+            display: flex;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+        }
+
+        .nav-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            padding: 8px;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .nav-item.active {
+            color: #4CAF50;
+        }
+
+        .nav-icon {
+            font-size: 20px;
+        }
+
+        .nav-text {
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .nav-item:not(.active) {
+            color: #999;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 400px) {
+            .phone-container {
+                margin: 0;
+                border-radius: 0;
+                padding: 0;
+            }
+            
+            .phone-screen {
+                border-radius: 0;
+            }
+
+            .bottom-nav {
+                width: 100%;
+            }
+        }
+
+        /* 滚动区域 */
+        .scroll-content {
+            padding-bottom: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone-screen">
+            <!-- 状态栏 -->
+            <div class="status-bar">
+                <div class="status-left">
+                    <span>14:12</span>
+                </div>
+                <div class="status-right">
+                    <span>📶</span>
+                    <span>5G</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+
+            <!-- 自定义导航栏 -->
+            <div class="custom-nav">
+                <div class="nav-avatar">大</div>
+                <div class="nav-text">今天的太阳比昨天大~</div>
+            </div>
+
+            <!-- 主内容区 -->
+            <div class="scroll-content">
+                <div class="main-content">
+                    <!-- 功能网格 -->
+                    <div class="functions-grid">
+                        <div class="grid-container">
+                            <div class="function-card">
+                                <div class="function-icon food-rank">🍎</div>
+                                <div class="function-text">食物排行</div>
+                            </div>
+                            <div class="function-card">
+                                <div class="function-icon red-black">📊</div>
+                                <div class="function-text">红黑榜</div>
+                            </div>
+                            <div class="function-card">
+                                <div class="function-icon food-category">📋</div>
+                                <div class="function-text">食物分类</div>
+                            </div>
+                            <div class="function-card">
+                                <div class="function-icon bmi">⚖️</div>
+                                <div class="function-text">体重测试</div>
+                            </div>
+                            <div class="function-card">
+                                <div class="function-icon workout">💪</div>
+                                <div class="function-text">运动推荐</div>
+                            </div>
+                            <div class="function-card">
+                                <div class="function-icon nutrition">🥗</div>
+                                <div class="function-text">营养搭配</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 问答卡片区域 -->
+                    <div class="qa-section">
+                        <div class="qa-item">
+                            <div class="qa-left">
+                                <div class="qa-icon daily">Q</div>
+                                <div class="qa-content">
+                                    <div class="qa-title">每日一答</div>
+                                    <div class="qa-desc">100大卡等于几个泡芙?</div>
+                                </div>
+                            </div>
+                            <div class="qa-arrow">›</div>
+                        </div>
+                        <div class="qa-item">
+                            <div class="qa-left">
+                                <div class="qa-icon topic">PK</div>
+                                <div class="qa-content">
+                                    <div class="qa-title">话题PK</div>
+                                    <div class="qa-desc">你站在哪一边</div>
+                                </div>
+                            </div>
+                            <div class="qa-arrow">›</div>
+                        </div>
+                    </div>
+
+                    <!-- 功能卡片列表 -->
+                    <div class="feature-cards">
+                        <div class="feature-card">
+                            <div class="feature-header">
+                                <div class="feature-title-section">
+                                    <div class="feature-title">减肥问答</div>
+                                    <div class="feature-desc">减肥不踩坑 减重更高效</div>
+                                </div>
+                                <button class="more-button">更多</button>
+                            </div>
+                            <div class="feature-items">
+                                <div class="feature-item">
+                                    <div class="feature-item-icon">❓</div>
+                                    <div class="feature-item-text">减肥不能吃哪些水果?</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-item-icon">❓</div>
+                                    <div class="feature-item-text">你最多能瘦多少斤?</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-item-icon">❓</div>
+                                    <div class="feature-item-text">减肥要制造多少热量缺口?</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-header">
+                                <div class="feature-title-section">
+                                    <div class="feature-title">运动指南</div>
+                                    <div class="feature-desc">科学运动 健康减脂</div>
+                                </div>
+                                <button class="more-button">更多</button>
+                            </div>
+                            <div class="feature-items">
+                                <div class="feature-item">
+                                    <div class="feature-item-icon">🏃</div>
+                                    <div class="feature-item-text">有氧运动的最佳时长是多少?</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-item-icon">💪</div>
+                                    <div class="feature-item-text">力量训练一周几次合适?</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-item-icon">🧘</div>
+                                    <div class="feature-item-text">运动后如何正确拉伸?</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 推广横幅 -->
+                <div class="promo-banner">
+                    <div class="banner-content">
+                        <div class="banner-title">「0元领」健身福利</div>
+                        <div class="banner-features">
+                            <div class="banner-feature-item">
+                                <div class="check-icon">✓</div>
+                                <span>1V1健身测评</span>
+                            </div>
+                            <div class="banner-feature-item">
+                                <div class="check-icon">✓</div>
+                                <span>0元随单礼2份(蛋白粉+运动服)</span>
+                            </div>
+                        </div>
+                        <button class="banner-button">每日限50名,速抢>></button>
+                        <div class="banner-disclaimer">*相关测评不涉及任何医疗手段或诊疗目的</div>
+                    </div>
+                    <div class="banner-image">🏃‍♀️</div>
+                </div>
+            </div>
+
+            <!-- 底部导航栏 -->
+            <div class="bottom-nav">
+                <div class="nav-item active">
+                    <div class="nav-icon">🏠</div>
+                    <div class="nav-text">健身</div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-icon">🍎</div>
+                    <div class="nav-text">饮食</div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-icon">👤</div>
+                    <div class="nav-text">我的</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

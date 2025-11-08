@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "数据统计",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "common-nav-bar": "../../components/common-nav-bar/common-nav-bar"
+  }
+}

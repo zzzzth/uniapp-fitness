@@ -1,24 +1,73 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "Home",
+				"navigationBarTitleText": "健身打卡",
 				"navigationStyle": "custom"
 			
 			}
 		},
 		{
-			"path": "pages/moment/moment",
+			"path": "pages/diet/diet",
 			"style": {
-				"navigationBarTitleText": "Moment",
+				"navigationBarTitleText": "饮食管理",
 				"navigationStyle": "custom"
 			}
 		},
 		{
 			"path": "pages/me/me",
 			"style": {
-				"navigationBarTitleText": "Me",
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/food_category/list",
+			"style": {
+				"navigationBarTitleText": "食物分类列表",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/food_category/add",
+			"style": {
+				"navigationBarTitleText": "添加食物分类",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/food_category/detail",
+			"style": {
+				"navigationBarTitleText": "食物分类详情",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/food_category/edit",
+			"style": {
+				"navigationBarTitleText": "编辑食物分类",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/dailyQuestion/dailyQuestion",
+			"style": {
+				"navigationBarTitleText": "每日一答",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/topicPk/topicPk",
+			"style": {
+				"navigationBarTitleText": "话题PK",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/cookbookRecom/cookbookRecom",
+			"style": {
+				"navigationBarTitleText": "食物排行",
 				"navigationStyle": "custom"
 			}
 		},
@@ -26,9 +75,16 @@
 			"path" : "common/commonHeader/commonHeader",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "custom"
+			}
+		},
+		{
+			"path": "pages/diet/preview",
+			"style": {
+				"navigationBarTitleText": "详情页"
 			}
 		}
+	
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -38,23 +94,27 @@
 	},
 	"uniIdRouter": {},
 	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#4CAF50",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
 		"list": [{
 				"pagePath": "pages/index/index",
-				"text": "Home",
-				"iconPath": "/static/images/hamburger.png",
-				"selectedIconPath": "/static/images/hamburger-active.png"
+				"text": "首页",
+				"iconPath": "/static/images/tabBar/hamburger.png",
+				"selectedIconPath": "/static/images/tabBar/hamburger-active.png"
 			},
 			{
-				"pagePath": "pages/moment/moment",
-				"text": "Moment",
-				"iconPath": "/static/images/potato.png",
-				"selectedIconPath": "/static/images/chip.png"
+				"pagePath": "pages/diet/diet",
+				"text": "饮食",
+				"iconPath": "/static/images/tabBar/potato.png",
+				"selectedIconPath": "/static/images/tabBar/chip.png"
 			},
-			{
+	{
 				"pagePath": "pages/me/me",
-				"text": "Me",
-				"iconPath": "/static/images/cola.png",
-				"selectedIconPath": "/static/images/cola-active.png"
+				"text": "我的",
+				"iconPath": "/static/images/tabBar/cola.png",
+				"selectedIconPath": "/static/images/tabBar/cola-active.png"
 			}
 		]
 	}

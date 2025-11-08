@@ -1,0 +1,159 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.custom-nav .weatherBox.data-v-19c123a7 {
+  width: 90rpx;
+  height: 90rpx;
+}
+.custom-nav .weatherBox .weatherImg.data-v-19c123a7 {
+  width: 100%;
+  height: 100%;
+}
+.content.data-v-19c123a7 {
+  padding: 20rpx;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+.user-info.data-v-19c123a7 {
+  background: white;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.1);
+}
+.user-info .avatar.data-v-19c123a7 {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  overflow: hidden;
+  margin-right: 30rpx;
+}
+.user-info .avatar image.data-v-19c123a7 {
+  width: 100%;
+  height: 100%;
+}
+.user-info .user-details.data-v-19c123a7 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.user-info .user-details .username.data-v-19c123a7 {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.user-info .user-details .user-level.data-v-19c123a7 {
+  font-size: 24rpx;
+  color: #4CAF50;
+}
+.user-info .edit-btn.data-v-19c123a7 {
+  padding: 15rpx 30rpx;
+  background: #f0f0f0;
+  border-radius: 20rpx;
+}
+.user-info .edit-btn text.data-v-19c123a7 {
+  font-size: 24rpx;
+  color: #666;
+}
+.data-overview.data-v-19c123a7 {
+  background: white;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.1);
+}
+.data-overview .data-item.data-v-19c123a7 {
+  text-align: center;
+}
+.data-overview .data-item .data-number.data-v-19c123a7 {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 10rpx;
+}
+.data-overview .data-item .data-label.data-v-19c123a7 {
+  font-size: 24rpx;
+  color: #666;
+}
+.menu-section.data-v-19c123a7 {
+  background: white;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+  overflow: hidden;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.1);
+}
+.menu-section .menu-item.data-v-19c123a7 {
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.menu-section .menu-item.data-v-19c123a7:last-child {
+  border-bottom: none;
+}
+.menu-section .menu-item.data-v-19c123a7:active {
+  background: #f8f8f8;
+}
+.menu-section .menu-item .menu-icon.data-v-19c123a7 {
+  font-size: 40rpx;
+  margin-right: 30rpx;
+}
+.menu-section .menu-item .menu-text.data-v-19c123a7 {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333;
+}
+.menu-section .menu-item .menu-arrow.data-v-19c123a7 {
+  font-size: 32rpx;
+  color: #ccc;
+}
+.health-tips.data-v-19c123a7 {
+  background: white;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.1);
+}
+.health-tips .tips-title.data-v-19c123a7 {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.health-tips .tips-content.data-v-19c123a7 {
+  display: flex;
+  flex-direction: column;
+  gap: 15rpx;
+}
+.health-tips .tips-content .tip-text.data-v-19c123a7 {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.5;
+}

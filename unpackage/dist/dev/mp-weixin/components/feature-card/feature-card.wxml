@@ -1,0 +1,1 @@
+<view class="bg-white p-3 rounded-_0d5rem_ my-_16rpx_"><view class="flex justify-between items-center"><view><view>{{a}}</view><view>{{b}}</view></view><view>{{c}}</view></view><view wx:for="{{d}}" wx:for-item="item" class="flex gap-2 my-_16rpx_"><view>{{item.a}}</view><view class="text-_hc4c4c4_">{{item.b}}</view></view></view>

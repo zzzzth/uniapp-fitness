@@ -1,9 +1,17 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/moment/moment",
+    "pages/diet/diet",
     "pages/me/me",
-    "common/commonHeader/commonHeader"
+    "pages/food_category/list",
+    "pages/food_category/add",
+    "pages/food_category/detail",
+    "pages/food_category/edit",
+    "pages/dailyQuestion/dailyQuestion",
+    "pages/topicPk/topicPk",
+    "pages/cookbookRecom/cookbookRecom",
+    "common/commonHeader/commonHeader",
+    "pages/diet/preview"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -12,24 +20,28 @@
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4CAF50",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "Home",
-        "iconPath": "/static/images/hamburger.png",
-        "selectedIconPath": "/static/images/hamburger-active.png"
+        "text": "首页",
+        "iconPath": "/static/images/tabBar/hamburger.png",
+        "selectedIconPath": "/static/images/tabBar/hamburger-active.png"
       },
       {
-        "pagePath": "pages/moment/moment",
-        "text": "Moment",
-        "iconPath": "/static/images/potato.png",
-        "selectedIconPath": "/static/images/chip.png"
+        "pagePath": "pages/diet/diet",
+        "text": "饮食",
+        "iconPath": "/static/images/tabBar/potato.png",
+        "selectedIconPath": "/static/images/tabBar/chip.png"
       },
       {
         "pagePath": "pages/me/me",
-        "text": "Me",
-        "iconPath": "/static/images/cola.png",
-        "selectedIconPath": "/static/images/cola-active.png"
+        "text": "我的",
+        "iconPath": "/static/images/tabBar/cola.png",
+        "selectedIconPath": "/static/images/tabBar/cola-active.png"
       }
     ]
   },

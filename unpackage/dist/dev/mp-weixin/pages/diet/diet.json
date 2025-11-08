@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "饮食管理",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "common-nav-bar": "../../components/common-nav-bar/common-nav-bar"
+  }
+}

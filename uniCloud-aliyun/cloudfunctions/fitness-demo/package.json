@@ -1,0 +1,7 @@
+{
+  "name": "fitness-demo",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

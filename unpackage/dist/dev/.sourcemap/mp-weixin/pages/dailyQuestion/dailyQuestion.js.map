@@ -1,0 +1,1 @@
+{"version":3,"file":"dailyQuestion.js","sources":["../../HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvZGFpbHlRdWVzdGlvbi9kYWlseVF1ZXN0aW9uLnZ1ZQ"],"sourcesContent":["import MiniProgramPage from 'D:/uniapp项目源代码/fitness-app/pages/dailyQuestion/dailyQuestion.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;AACA,GAAG,WAAW,eAAe;"}

@@ -1,0 +1,1 @@
+<view wx:if="{{a}}"> 详情页 <view>姓名{{b}}</view><view>年龄{{c}}</view><view>ip:{{d}}</view><view>创建时间:{{e}}</view></view>

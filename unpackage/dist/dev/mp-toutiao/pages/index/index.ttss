@@ -1,0 +1,211 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.custom-nav .weatherBox.data-v-1cf27b2a {
+  width: 90rpx;
+  height: 90rpx;
+}
+.custom-nav .weatherBox .weatherImg.data-v-1cf27b2a {
+  width: 100%;
+  height: 100%;
+}
+.content.data-v-1cf27b2a {
+  padding: 20rpx;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+.date-greeting.data-v-1cf27b2a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+  padding: 30rpx;
+  background: white;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.08);
+}
+.date-greeting .date-info.data-v-1cf27b2a {
+  display: flex;
+  align-items: center;
+}
+.date-greeting .date-info .day-number.data-v-1cf27b2a {
+  font-size: 80rpx;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-right: 20rpx;
+}
+.date-greeting .date-info .date-details.data-v-1cf27b2a {
+  display: flex;
+  flex-direction: column;
+}
+.date-greeting .date-info .date-details .year-month.data-v-1cf27b2a {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 5rpx;
+}
+.date-greeting .date-info .date-details .weekday.data-v-1cf27b2a {
+  font-size: 24rpx;
+  color: #666;
+}
+.date-greeting .greeting-mascot .mascot.data-v-1cf27b2a {
+  font-size: 60rpx;
+}
+.goal-anniversary-card.data-v-1cf27b2a {
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  background: white;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.08);
+}
+.goal-anniversary-card .goal-avatar.data-v-1cf27b2a {
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 40rpx;
+}
+.goal-anniversary-card .goal-avatar .avatar-icon.data-v-1cf27b2a {
+  font-size: 40rpx;
+}
+.goal-anniversary-card .goal-content.data-v-1cf27b2a {
+  flex: 1;
+  margin: 0 20rpx;
+}
+.goal-anniversary-card .goal-content .goal-progress.data-v-1cf27b2a {
+  margin-bottom: 15rpx;
+}
+.goal-anniversary-card .goal-content .goal-progress .progress-dots.data-v-1cf27b2a {
+  display: flex;
+  gap: 8rpx;
+  margin-bottom: 10rpx;
+}
+.goal-anniversary-card .goal-content .goal-progress .progress-dots .dot.data-v-1cf27b2a {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 6rpx;
+  background: #e0e0e0;
+}
+.goal-anniversary-card .goal-content .goal-progress .progress-dots .dot.active.data-v-1cf27b2a {
+  background: #4CAF50;
+}
+.goal-anniversary-card .goal-content .goal-progress .progress-bar.data-v-1cf27b2a {
+  height: 6rpx;
+  background: #e0e0e0;
+  border-radius: 3rpx;
+  overflow: hidden;
+}
+.goal-anniversary-card .goal-content .goal-progress .progress-bar .bar-fill.data-v-1cf27b2a {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  border-radius: 3rpx;
+  transition: width 0.3s ease;
+}
+.goal-anniversary-card .goal-content .goal-text.data-v-1cf27b2a {
+  font-size: 24rpx;
+  color: #666;
+}
+.function-grid.data-v-1cf27b2a {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rpx;
+  margin-bottom: 30rpx;
+}
+.function-grid .grid-item.data-v-1cf27b2a {
+  background: white;
+  border-radius: 16rpx;
+  padding: 30rpx 20rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+.function-grid .grid-item.data-v-1cf27b2a:active {
+  transform: scale(0.95);
+}
+.function-grid .grid-item .item-icon.data-v-1cf27b2a {
+  font-size: 48rpx;
+  margin-bottom: 15rpx;
+}
+.function-grid .grid-item .item-icon.running.data-v-1cf27b2a {
+  color: #FF6B6B;
+}
+.function-grid .grid-item .item-icon.gym.data-v-1cf27b2a {
+  color: #4ECDC4;
+}
+.function-grid .grid-item .item-icon.yoga.data-v-1cf27b2a {
+  color: #45B7D1;
+}
+.function-grid .grid-item .item-icon.cycling.data-v-1cf27b2a {
+  color: #96CEB4;
+}
+.function-grid .grid-item .item-icon.meal.data-v-1cf27b2a {
+  color: #FFEAA7;
+}
+.function-grid .grid-item .item-icon.stats.data-v-1cf27b2a {
+  color: #DDA0DD;
+}
+.function-grid .grid-item .item-text.data-v-1cf27b2a {
+  font-size: 24rpx;
+  color: #333;
+  font-weight: 500;
+}
+.today-stats.data-v-1cf27b2a {
+  background: white;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.08);
+}
+.today-stats .stats-title.data-v-1cf27b2a {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25rpx;
+}
+.today-stats .stats-grid.data-v-1cf27b2a {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25rpx;
+}
+.today-stats .stats-grid .stat-item.data-v-1cf27b2a {
+  text-align: center;
+  padding: 20rpx;
+  background: #f8f9fa;
+  border-radius: 12rpx;
+}
+.today-stats .stats-grid .stat-item .stat-number.data-v-1cf27b2a {
+  display: block;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 8rpx;
+}
+.today-stats .stats-grid .stat-item .stat-label.data-v-1cf27b2a {
+  font-size: 22rpx;
+  color: #666;
+}
